@@ -1,0 +1,114 @@
+# 🚀 Outreach Mailer
+
+> **Stop paying $30–$50/month for GMass, Mailmeteor, or YAMM.**  
+> Outreach Mailer is a powerful, privacy-first, 100% free cold email engine that runs entirely inside your Google account.
+
+---
+
+## ⚡ Why Outreach Mailer?
+
+Most cold outreach tools charge hefty monthly fees just to send emails through your own Gmail account. They store your recipient data on third-party servers and lock essential features like A/B testing or automated follow-ups behind expensive pricing tiers.
+
+**Outreach Mailer gives you enterprise-grade outreach features for $0/month.**
+
+- **Zero Subscriptions:** Runs on native Google Apps Script inside your Google Workspace or `@gmail.com` account.
+- **100% Data Privacy:** Your contacts, pitch notes, and emails never leave your Google Drive.
+- **Smart Bot & Scanner Defense:** Corporate email filters often pre-click links and trigger fake opens or accidental unsubscribes. Outreach Mailer ignores opens within 120 seconds of sending and requires click confirmation for opt-outs.
+- **Safe Mail Merge:** Cross-references recipient email addresses to ensure sorting or filtering rows in Google Sheets never misaligns tracking data.
+
+---
+
+## 🔥 Key Features
+
+- 🧪 **Full A/B Split Testing:** Randomly test both subject lines and body copy (`A1_A` vs `A1_B`) to optimize response rates.
+- 📬 **Threaded Follow-Ups:** Automatically sends follow-up replies on Day 7 and Day 14 inside the same Gmail thread until a reply or bounce is detected.
+- 👁️ **Pixel Open Tracking:** Track email opens via a lightweight, self-hosted Web App endpoint.
+- 🛑 **Automated Unsubscribe Engine:** Includes a clean opt-out link in footers that automatically halts sequence emails when clicked.
+- 📝 **Draft Preview Mode:** Generate personalized previews in your Gmail Drafts folder to inspect formatting before pushing send.
+- 📊 **Campaign Analytics Dashboard:** One-click generation of a summary tab showing open rates, reply rates, bounce metrics, and variant performance side-by-side.
+- 🛡️ **Pacing & Safety Controls:** Enforce customizable daily sending caps, business-hour sending windows, and randomized delays between dispatches to protect domain reputation.
+
+---
+
+## 📊 Feature Comparison
+
+| Feature | Outreach Mailer | GMass / Mailmeteor / YAMM |
+| :--- | :--- | :--- |
+| **Monthly Cost** | **$0 / Free & Open Source** | $15 – $50+ / month |
+| **Data Privacy** | 100% Private (Your Google Account) | Third-party cloud servers |
+| **A/B Split Testing** | Subject + Body Copy | Paid Tiers Only |
+| **Automated Follow-ups** | Threaded Replies (Day 7 & 14) | Paid Tiers Only |
+| **Bot/Scanner Defense** | Filters self-opens & Security Bots | Variable |
+| **Unsubscribe Handler** | Auto-flags sheet + Confirmation Page | Paid Tiers Only |
+
+---
+
+## 🛠️ Quick Start (5-Minute Setup)
+
+### Step 1: Set Up Your Google Sheet
+
+Create a Google Sheet with two tabs:
+
+#### 1. `Targets (Roles)`
+Set up your spreadsheet columns matching these positions:
+- **Col C (3):** `Company`
+- **Col L (12):** `Email`
+- **Col N (14):** `First Name`
+- **Col O (15):** `Hook`
+- **Col P (16):** `Role Angle`
+- **Col Q (17):** `Email 1 Sent`
+- **Col R (18):** `Follow-up 1 Due`
+- **Col S (19):** `Follow-up 2 Due`
+- **Col T (20):** `Status`
+- **Col U (21):** `Notes`
+- **Col V (22):** `Source`
+- **Col W (23):** `Variant`
+- **Col X (24):** `Thread ID`
+- **Col Y (25):** `Opened At`
+
+#### 2. `Email Templates`
+Set up your template headers in Row 1 (`ID`, `Use`, `Send when`, `Subject`, `Body`).
+Add your templates:
+- `A1_A`: First Email (Variant A)
+- `A1_B`: First Email (Variant B)
+- `A2`: Follow-up 1
+- `A3`: Follow-up 2
+
+*Placeholders supported in body/subject:* `{{First Name}}`, `{{Company}}`, `{{Hook}}`, `{{Role_Angle}}`.
+
+---
+
+### Step 2: Install Code & Deploy Web App
+
+1. In Google Sheets, click **Extensions > Apps Script**.
+2. Replace all code in `Code.gs` with the script from this repository and save.
+3. Click **Deploy > New deployment**.
+4. Select **Web app** as the deployment type.
+5. Set **Execute as:** `Me` and **Who has access:** `Anyone`.
+6. Click **Deploy**, copy the generated **Web App URL**, and paste it into `CFG.WEB_APP_URL` at the top of `Code.gs`. Save the file.
+
+---
+
+### Step 3: Run Campaign
+
+Refresh your Google Sheet to see the new **Outreach** menu in the top bar:
+
+1. **Send test sequence to myself:** Verify draft creation and follow-up threading without tracking pixels.
+2. **Create draft previews in Gmail:** Inspect personalized drafts in your Gmail inbox before sending.
+3. **Send first emails:** Dispatch initial emails with randomized A/B split testing.
+4. **Send due follow-ups now:** Manually trigger pending follow-ups.
+5. **Check replies and bounces:** Scan threads for incoming replies or bounces.
+6. **Generate Campaign Analytics report:** Produce an updated performance summary tab.
+7. **Turn on daily follow-ups:** Enable the automated weekday 9:00 AM trigger for hands-free follow-up processing.
+
+---
+
+## 🔒 Privacy & Sending Limits
+
+Outreach Mailer respects standard Google sending caps (500 emails/day for standard `@gmail.com` accounts, 2,000 emails/day for Google Workspace). We recommend capping daily outreach between 10 and 50 emails per account for optimal inbox deliverability.
+
+---
+
+## 📄 License
+
+Distributed under the [MIT License](LICENSE). Contributions, bug reports, and feature requests are welcome!
