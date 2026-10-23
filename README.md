@@ -76,6 +76,18 @@ Add your templates:
 
 *Placeholders supported in body/subject:* `{{First Name}}`, `{{Company}}`, `{{Hook}}`, `{{Role_Angle}}`.
 
+## 📋 Starter Template & Spreadsheet Downloads
+
+To get started immediately without setting up spreadsheet columns by hand, create a copy of the pre-formatted Google Sheet or download the starter template workbook.
+
+### Option 1: One-Click Google Sheets Copy
+Click the link below to generate a clean, unpopulated copy directly in your Google Drive with all tabs, column positions, and headers pre-configured:
+
+👉 **[Make a Copy of Outreach Mailer Spreadsheet Template](https://docs.google.com/spreadsheets/d/1oc8hT4tIQoG5zXIXwA5jcZQgxrJV9j7E2kHeGZe7TMQ/copy)**
+
+### Option 2: Download Excel Workbook Template
+Download `Outreach_Mailer_Template.xlsx` from this repository and upload it directly to Google Drive or import it into Google Sheets. It contains both pre-configured tabs (`Targets (Roles)` and `Email Templates`) ready to use.
+
 ---
 
 ### Step 2: Install Code & Deploy Web App
