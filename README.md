@@ -1,19 +1,19 @@
-# 🚀 Outreach Mailer
+# 🚀 GetMyEmail
 
 > **Stop paying $30–$50/month for GMass, Mailmeteor, or YAMM.**  
-> Outreach Mailer is a powerful, privacy-first, 100% free cold email engine that runs entirely inside your Google account.
+> GetMyEmail is a powerful, privacy-first, 100% free cold email engine that runs entirely inside your Google account.
 
 ---
 
-## ⚡ Why Outreach Mailer?
+## ⚡ Why GetMyEmail?
 
 Most cold outreach tools charge hefty monthly fees just to send emails through your own Gmail account. They store your recipient data on third-party servers and lock essential features like A/B testing or automated follow-ups behind expensive pricing tiers.
 
-**Outreach Mailer gives you enterprise-grade outreach features for $0/month.**
+**GetMyEmail gives you enterprise-grade outreach features for $0/month.**
 
 - **Zero Subscriptions:** Runs on native Google Apps Script inside your Google Workspace or `@gmail.com` account.
 - **100% Data Privacy:** Your contacts, pitch notes, and emails never leave your Google Drive.
-- **Smart Bot & Scanner Defense:** Corporate email filters often pre-click links and trigger fake opens or accidental unsubscribes. Outreach Mailer ignores opens within 120 seconds of sending and requires click confirmation for opt-outs.
+- **Smart Bot & Scanner Defense:** Corporate email filters often pre-click links and trigger fake opens or accidental unsubscribes. GetMyEmail ignores opens within 120 seconds of sending and requires click confirmation for opt-outs.
 - **Safe Mail Merge:** Cross-references recipient email addresses to ensure sorting or filtering rows in Google Sheets never misaligns tracking data.
 
 ---
