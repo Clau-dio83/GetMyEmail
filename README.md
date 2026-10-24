@@ -117,7 +117,23 @@ Refresh your Google Sheet to see the new **Outreach** menu in the top bar:
 
 ## 🔒 Privacy & Sending Limits
 
-Outreach Mailer respects standard Google sending caps (500 emails/day for standard `@gmail.com` accounts, 2,000 emails/day for Google Workspace). We recommend capping daily outreach between 10 and 50 emails per account for optimal inbox deliverability.
+Outreach Mailer respects standard Google sending caps (100 emails/day for standard `@gmail.com` accounts, 1,500 emails/day for Google Workspace). We recommend capping daily outreach between 10 and 50 emails per account for optimal inbox deliverability.
+
+---
+
+## ⚖️ Compliance and Responsible Use
+
+Outreach Mailer is a tool. You are responsible for how you use it. This is general information, not legal advice.
+
+- **Know your local rules.** Cold and commercial email is regulated differently by country and by recipient type. In the EU and UK, GDPR and ePrivacy rules apply, and some countries are stricter than others about unsolicited B2B email. Check the rules for where you and your recipients are based.
+- **Have a legitimate reason to write.** Email people for a clear, relevant purpose. Do not scrape or buy lists, and do not email people with no connection to your message.
+- **Be transparent.** Use your real name and a real reply address. Say who you are and why you are writing. Where the law requires it, add your postal address.
+- **Honor opt-outs.** Keep the unsubscribe link on, and stop emailing anyone who unsubscribes or replies "no". If someone asks how you got their data, tell them.
+- **Open tracking needs care.** Tracking pixels can count as processing personal data and may need consent or disclosure in some regions. Open data is also unreliable, because mail apps and security scanners can trigger fake opens. You can turn it off with `ENABLE_OPEN_TRACKING: false`.
+- **Keep data minimal.** Store only what you need, delete contacts you no longer need, and do not commit real contact lists to GitHub.
+- **Respect sending limits.** Google caps daily sends per account and may suspend accounts that send spam. Keep volumes low and messages personal.
+
+The authors and contributors are not responsible for misuse.
 
 ---
 
